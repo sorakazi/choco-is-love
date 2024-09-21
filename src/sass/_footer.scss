@@ -1,0 +1,266 @@
+.footer {
+  background-color: var(--grey);
+  padding: 32px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 375px;
+  padding: 30px 20px;
+}
+.container {
+  max-width: 428px;
+}
+
+.footer-contacts-container {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  margin: 0;
+  align-items: flex-start;
+}
+// FOOTER LOGO
+
+.footer-text {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.footer-logo {
+  color: var(--orange);
+}
+
+// FOOTER CONTACTS
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-contacts-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.footer-contacts-list {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+
+.footer-contacts-item {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--white);
+}
+.footer-contacts-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-icon-list {
+  text-decoration: none;
+  display: flex;
+  padding-left: 106px;
+}
+
+.footer-icon-list:first-child {
+  margin-left: 0;
+}
+
+.footer-icon-point {
+  list-style-type: none;
+  margin-right: 14px;
+}
+
+.footer-icon-point:last-child {
+  margin-right: 0;
+}
+
+.footer-icon-item {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  fill: var(--white);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-item:hover,
+.footer-icon-item:focus {
+  fill: var(--orange);
+  transform: scale(1.1);
+}
+
+.footer-menu-anchor:hover,
+.footer-menu-anchor:hover,
+.footer-menu-anchor:active {
+  color: var(--orange);
+}
+
+.footer-icon-item:active {
+  fill: var(--orange);
+  transform: scale(1.1);
+}
+
+//  FOOTER MENU
+
+.footer-menu::before {
+  max-width: 100%;
+  content: '';
+  display: block;
+  width: 335px;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(180deg);
+  margin-bottom: 32px;
+}
+
+.footer-menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+}
+
+.footer-menu-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.footer-menu-anchor {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+  }
+
+  .footer {
+    padding: 50px 32px;
+  }
+
+  .footer-contacts-container {
+    width: 704px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-contacts {
+    position: absolute;
+    padding-left: 424px;
+    margin-bottom: 50px;
+  }
+
+  .footer-menu-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-text {
+    font-size: 28px;
+    line-height: 1.21;
+    margin-bottom: 54px;
+  }
+
+  .footer-address {
+    margin-right: 50px;
+  }
+
+  .footer-icon-list {
+    padding-left: 20px;
+  }
+
+  .footer-icon-item {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-menu {
+    width: 768px;
+  }
+
+  .footer-menu::before {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    width: 1200px;
+    padding: 50px 32px;
+    margin-left: -424px;
+  }
+
+  .footer-contacts-container {
+    width: 1166px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-menu::before {
+    width: 100%;
+  }
+
+  .footer-menu {
+    width: 1132px;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .footer-address {
+    margin-right: 64px;
+  }
+
+  .footer-contacts {
+    position: absolute;
+    padding-left: 820px;
+    margin-bottom: 0;
+  }
+
+  .footer-contacts-container {
+    width: 1132px;
+    margin-bottom: 62px;
+  }
+
+  .footer-icon-list {
+    padding-left: 20px;
+  }
+
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+  }
+}

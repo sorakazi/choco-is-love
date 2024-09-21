@@ -1,0 +1,41 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --black: #111;
+  --grey: #1e1823;
+  --orange: #fd9222;
+  --dirty-white: #fafafa;
+  --white: #fff;
+  --montserrat: montserrat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--dirty-white);
+}
+ul,
+.list {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}

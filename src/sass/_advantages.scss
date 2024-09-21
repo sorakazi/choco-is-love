@@ -1,0 +1,72 @@
+.list {
+  list-style: none;
+}
+
+.advantages {
+  position: relative;
+  flex: 0 0 0%;
+  display: flex;
+  flex-direction: column;
+}
+.container-advantages {
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background: var(--grey);
+}
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: unset;
+  border: 0;
+  position: absolute;
+  clip-path: inset(100%);
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px 70px;
+  flex-flow: column;
+  flex: 1 1 0%;
+  padding: 0 20px;
+}
+
+.svg_circle {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.303px;
+  flex-shrink: 0;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section-two svg {
+  fill: currentColor;
+}
+.item-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  padding: 22px 0 18px;
+}
+.advantages-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+@import './advantages-tablet';
+@import './advantages-desktop';

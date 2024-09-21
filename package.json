@@ -1,0 +1,30 @@
+{
+  "name": "Choco-coded",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://sorakazi.github.io/choco-is-love/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /choco-coded/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sorakazi.github.io/choco-is-love.git"
+  },
+  "keywords": [],
+  "author": "Edmun Argana <edmundargana@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://sorakazi.github.io/choco-is-love/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
